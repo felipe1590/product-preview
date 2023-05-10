@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+    --cor01: hsl(212, 21%, 14%);
+    --cor02: hsl(228, 12%, 48%);
+    --cor03: hsl(0, 0%, 100%);
+    --cor04: hsl(158, 36%, 37%);
+    --cor05: hsl(30, 38%, 92%);
+
+    --font01: 'Fraunces', serif;
+    --font02: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    background: var(--cor05);
+    padding-top: 20px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 340px;
+    height: 610px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.foto-produto {
+    width: 340px;
+    height: 238px;
+    background: url('../images/image-product-mobile.jpg') no-repeat;
+    background-size: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+.descricao {
+    width: 268px;
+    margin: 0 auto;
+    padding: 25px 0;
+}
+
+.descricao-previa {
+    font-family: var(--font02);
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 0.4em;
+    color: var(--cor02);
+    padding-bottom: 10px;
+}
+
+.descricao-titulo {
+    font-family: var(--font01);
+    font-size: 1.8em;
+    padding-bottom: 15px;
+}
+
+.descricao-produto {
+    font-family: var(--font02);
+    font-size: 0.8em;
+    line-height: 1.8em;
+    color: var(--cor02);
+    padding-bottom: 20px;
+}
+
+.preco-atual {
+    display: inline-block;
+    font-family: var(--font01);
+    font-weight: 700;
+    font-size: 2em;
+    color: var(--cor04);
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.preco-real {
+    display: inline-block;
+    vertical-align: super;
+    text-decoration: line-through;
+    font-family: var(--font02);
+    font-weight: 500;
+    font-size: 0.8em;
+    color: var(--cor02);
+}
+
+.butao {
+    width: 268px;
+    height: 45px;
+    background: var(--cor04);
+    border: none;
+    border-radius: 5px;
+
+    font-family: var(--font02);
+    font-weight: 700;
+    color: var(--cor03);
+}
+
+.icone-carro {
+    vertical-align: bottom;
+    padding-right: 8px;
+}
+
+
