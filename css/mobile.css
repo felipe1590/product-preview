@@ -36,12 +36,16 @@ body {
     border-radius: 10px;
 }
 
-.foto-produto {
+.mobile {
     width: 340px;
     height: 238px;
     background: url('../images/image-product-mobile.jpg') no-repeat;
     background-size: contain;
     border-radius: 10px 10px 0 0;
+}
+
+.desktop {
+    display: none;
 }
 
 .descricao {
